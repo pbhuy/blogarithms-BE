@@ -1,6 +1,6 @@
 package com.baohuy.blogarithms.controller;
 
-import com.baohuy.blogarithms.Utils.ApiResponse;
+import com.baohuy.blogarithms.utils.ApiResponse;
 import com.baohuy.blogarithms.model.Blog;
 import com.baohuy.blogarithms.service.BlogService;
 import org.apache.logging.log4j.LogManager;
@@ -26,10 +26,11 @@ public class BlogController {
 
     @GetMapping("")
     public ResponseEntity<ApiResponse<List<Blog>>> getBlogs(
+            @RequestParam(required = false) String term,
             @RequestParam(defaultValue = "1") int page,
             @RequestParam(defaultValue = "10") int size
     ) {
-        Page<Blog> blogs = blogService.getBlogs(page, size);
+        Page<Blog> blogs = blogService.getBlogs(term, page, size);
         return ResponseEntity.ok(ApiResponse.successWithPagination(blogs, "All blogs retrieved successfully"));
     }
 

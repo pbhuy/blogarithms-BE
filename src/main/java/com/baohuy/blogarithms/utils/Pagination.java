@@ -1,4 +1,4 @@
-package com.baohuy.blogarithms.Utils;
+package com.baohuy.blogarithms.utils;
 
 import org.springframework.data.domain.Page;
 

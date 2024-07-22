@@ -28,7 +28,7 @@ public class Blog {
     @Column(name = "reading_time")
     private String readingTime;
 
-    @Column(name = "content")
+    @Column(name = "content", columnDefinition = "TEXT")
     private String content;
 
     @Column(name = "tags")

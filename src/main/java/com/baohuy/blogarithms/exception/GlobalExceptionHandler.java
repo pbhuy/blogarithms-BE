@@ -1,6 +1,6 @@
 package com.baohuy.blogarithms.exception;
 
-import com.baohuy.blogarithms.Utils.ApiResponse;
+import com.baohuy.blogarithms.utils.ApiResponse;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;

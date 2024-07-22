@@ -1,4 +1,4 @@
-package com.baohuy.blogarithms.Utils;
+package com.baohuy.blogarithms.utils;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import org.springframework.data.domain.Page;
